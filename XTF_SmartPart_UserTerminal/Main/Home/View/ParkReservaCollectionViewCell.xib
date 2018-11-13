@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ParkReservaCollectionViewCell" id="gTV-IL-0wX" customClass="ParkReservaCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="82" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="82" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parkon" translatesAutoresizingMaskIntoConstraints="NO" id="iBU-7T-nCo">
+                        <rect key="frame" x="0.0" y="0.0" width="82" height="72"/>
+                        <color key="backgroundColor" red="0.3088898659" green="0.50287497039999995" blue="0.77257984879999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="iBU-7T-nCo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vl4-7z-YBP"/>
+                <constraint firstItem="iBU-7T-nCo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XzP-NX-H1O"/>
+                <constraint firstAttribute="trailing" secondItem="iBU-7T-nCo" secondAttribute="trailing" id="Y1i-93-N6x"/>
+                <constraint firstAttribute="bottom" secondItem="iBU-7T-nCo" secondAttribute="bottom" id="h6v-Ar-yJ0"/>
+            </constraints>
+            <size key="customSize" width="82" height="72"/>
+            <point key="canvasLocation" x="50" y="65"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="parkon" width="70" height="90"/>
+    </resources>
+</document>

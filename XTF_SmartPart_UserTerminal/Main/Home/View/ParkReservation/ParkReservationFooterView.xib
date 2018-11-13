@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ParkReservationFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEe-kQ-93U">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="5"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="eUa-WY-q8B"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预定区域：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mra-by-C5f">
+                    <rect key="frame" x="9" y="26.5" width="87" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="87" id="xxy-kt-UKK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTG-3o-BxK">
+                    <rect key="frame" x="0.0" y="125.5" width="375" height="5"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="J9A-3k-x5E"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. 预约成功后，车位会为您预留30分钟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bO9-PX-FU4">
+                    <rect key="frame" x="10.5" y="145.5" width="354" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jf1-Ui-8Ce">
+                    <rect key="frame" x="10.5" y="174.5" width="354" height="45.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="2. ">
+                            <attributes>
+                                <font key="NSFont" metaFont="system" size="17"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="请于">
+                            <attributes>
+                                <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="30">
+                            <attributes>
+                                <font key="NSFont" metaFont="system" size="17"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="分钟内将车辆停入预约车位，超时未停入，车位将会被取消">
+                            <attributes>
+                                <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bO9-PX-FU4" firstAttribute="top" secondItem="JTG-3o-BxK" secondAttribute="bottom" constant="15" id="CWE-iB-wmb"/>
+                <constraint firstItem="Jf1-Ui-8Ce" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10.5" id="H0s-vA-JXk"/>
+                <constraint firstAttribute="trailing" secondItem="JTG-3o-BxK" secondAttribute="trailing" id="L4u-aS-NjS"/>
+                <constraint firstItem="Jf1-Ui-8Ce" firstAttribute="top" secondItem="bO9-PX-FU4" secondAttribute="bottom" constant="8" id="MX2-oa-hHt"/>
+                <constraint firstItem="JTG-3o-BxK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vjd-eU-71K"/>
+                <constraint firstItem="JTG-3o-BxK" firstAttribute="top" secondItem="Mra-by-C5f" secondAttribute="bottom" constant="78" id="ezG-cJ-MPy"/>
+                <constraint firstAttribute="trailing" secondItem="bO9-PX-FU4" secondAttribute="trailing" constant="10.5" id="fUP-fq-usR"/>
+                <constraint firstAttribute="trailing" secondItem="Jf1-Ui-8Ce" secondAttribute="trailing" constant="10.5" id="hNd-dC-4di"/>
+                <constraint firstItem="Mra-by-C5f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="9" id="iDN-V4-WMb"/>
+                <constraint firstItem="CEe-kQ-93U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iHt-Hn-9Vp"/>
+                <constraint firstAttribute="trailing" secondItem="CEe-kQ-93U" secondAttribute="trailing" id="v7p-v2-KhX"/>
+                <constraint firstItem="bO9-PX-FU4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10.5" id="vM2-Fy-1Wf"/>
+                <constraint firstItem="CEe-kQ-93U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xQa-Vi-4B9"/>
+                <constraint firstItem="Mra-by-C5f" firstAttribute="top" secondItem="CEe-kQ-93U" secondAttribute="bottom" constant="21.5" id="zbw-JC-Ioh"/>
+            </constraints>
+            <connections>
+                <outlet property="bookAreaLab" destination="Mra-by-C5f" id="PM8-h5-Fw4"/>
+                <outlet property="topview" destination="CEe-kQ-93U" id="pDX-mH-5yi"/>
+            </connections>
+        </view>
+    </objects>
+</document>

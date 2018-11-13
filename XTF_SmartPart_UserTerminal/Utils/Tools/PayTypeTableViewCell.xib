@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PayTypeTableViewCell" id="KGk-i7-Jjw" customClass="PayTypeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_pay" translatesAutoresizingMaskIntoConstraints="NO" id="GeY-pI-U39">
+                        <rect key="frame" x="10" y="27.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="JUv-zZ-Im8"/>
+                            <constraint firstAttribute="width" constant="25" id="han-t4-Ese"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPx-e9-Rcd">
+                        <rect key="frame" x="45" y="29.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSa-ex-onD">
+                        <rect key="frame" x="345" y="30" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="6bj-Nw-e4z"/>
+                            <constraint firstAttribute="height" constant="20" id="xnl-Lf-dgM"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="paytype_select"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="OSa-ex-onD" secondAttribute="trailing" constant="10" id="6x5-6h-Bw7"/>
+                    <constraint firstItem="GeY-pI-U39" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DrD-2J-aln"/>
+                    <constraint firstItem="OPx-e9-Rcd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Hcx-Kl-K3r"/>
+                    <constraint firstItem="GeY-pI-U39" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="L9H-Bg-HGj"/>
+                    <constraint firstItem="OPx-e9-Rcd" firstAttribute="leading" secondItem="GeY-pI-U39" secondAttribute="trailing" constant="10" id="vIJ-FE-Gov"/>
+                    <constraint firstItem="OSa-ex-onD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="y2n-oQ-0AF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectBtn" destination="OSa-ex-onD" id="efe-ST-GFj"/>
+                <outlet property="typeNameLab" destination="OPx-e9-Rcd" id="NCW-fe-mIT"/>
+                <outlet property="typeView" destination="GeY-pI-U39" id="EAq-CX-Xmq"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="card_pay" width="25" height="25"/>
+        <image name="paytype_select" width="20" height="20"/>
+    </resources>
+</document>

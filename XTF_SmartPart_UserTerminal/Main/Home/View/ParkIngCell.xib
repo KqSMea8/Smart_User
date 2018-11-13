@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="ParkIngCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_no_bg_blue" translatesAutoresizingMaskIntoConstraints="NO" id="PZU-i4-uSj">
+                        <rect key="frame" x="35" y="28" width="170" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="170" id="KTJ-2O-ECJ"/>
+                            <constraint firstAttribute="height" constant="60" id="Zz6-lc-2Sz"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车位:A123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jX-Xv-UyY">
+                        <rect key="frame" x="240" y="33" width="78" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="停车中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6z-rl-A4r">
+                        <rect key="frame" x="240" y="64" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.27389529350000003" green="0.57672357559999998" blue="0.18823696670000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="湘A 12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1c3-1e-Zxq">
+                        <rect key="frame" x="61" y="49" width="118.5" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0jX-Xv-UyY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="33" id="3gm-4m-YWA"/>
+                    <constraint firstItem="PZU-i4-uSj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="35" id="8he-3Z-4Tt"/>
+                    <constraint firstItem="0jX-Xv-UyY" firstAttribute="leading" secondItem="PZU-i4-uSj" secondAttribute="trailing" constant="35" id="A2K-T8-2ix"/>
+                    <constraint firstItem="u6z-rl-A4r" firstAttribute="top" secondItem="0jX-Xv-UyY" secondAttribute="bottom" constant="10" id="Jep-ZM-Zq2"/>
+                    <constraint firstItem="1c3-1e-Zxq" firstAttribute="centerX" secondItem="PZU-i4-uSj" secondAttribute="centerX" id="SWZ-CL-pcB"/>
+                    <constraint firstAttribute="trailing" secondItem="0jX-Xv-UyY" secondAttribute="trailing" constant="2" id="Uue-ru-5y0"/>
+                    <constraint firstItem="u6z-rl-A4r" firstAttribute="leading" secondItem="0jX-Xv-UyY" secondAttribute="leading" id="fPv-gc-NU8"/>
+                    <constraint firstItem="PZU-i4-uSj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lcT-JH-S66"/>
+                    <constraint firstItem="1c3-1e-Zxq" firstAttribute="top" secondItem="PZU-i4-uSj" secondAttribute="top" constant="21" id="x9b-K3-LtW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="34" y="90"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="car_no_bg_blue" width="170" height="60"/>
+    </resources>
+</document>

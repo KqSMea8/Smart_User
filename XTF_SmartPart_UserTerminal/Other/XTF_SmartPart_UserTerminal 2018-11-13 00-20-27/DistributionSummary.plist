@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>XTF_SmartPart_UserTerminal.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>505BF10D28B57A7FE64FB02C382DE9D8AFB4EC95</string>
+				<key>dateExpires</key>
+				<string>2021/9/26</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>QNNB6W47D7.com.transfar.smartpartUser</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>QNNB6W47D7</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>QNNB6W47D7.com.transfar.smartpartUser</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>XTF_SmartPart_UserTerminal.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>c1805550-5147-4eaa-bce7-390dd80be17b</string>
+				<key>name</key>
+				<string>iOS Team Inhouse Provisioning Profile: com.transfar.smartpartUser</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>QNNB6W47D7</string>
+				<key>name</key>
+				<string>Transfer Technologies Co., Ltd.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

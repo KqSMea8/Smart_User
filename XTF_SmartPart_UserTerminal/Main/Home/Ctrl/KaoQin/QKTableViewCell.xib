@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="QKTableViewCell" id="KGk-i7-Jjw" customClass="QKTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dots_blue" translatesAutoresizingMaskIntoConstraints="NO" id="wLe-BP-61u">
+                        <rect key="frame" x="10" y="0.0" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="OGd-Jy-7Ug"/>
+                            <constraint firstAttribute="height" constant="15" id="dLB-4j-6t3"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPv-AD-9gX">
+                        <rect key="frame" x="17.5" y="15" width="0.5" height="94.5"/>
+                        <color key="backgroundColor" red="0.2420240045" green="0.50205695630000002" blue="0.79611164329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="g42-7x-vlc"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上班时间08:40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJQ-rh-mlt">
+                        <rect key="frame" x="30" y="-3" width="116" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="缺卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wJ-sb-ws0">
+                        <rect key="frame" x="30" y="40.5" width="35" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="1f7-UT-SZG"/>
+                            <constraint firstAttribute="width" constant="35" id="O0j-uF-tIN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.92291849849999996" green="0.32531166080000001" blue="0.3686116934" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重新打卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGW-CM-Vtt">
+                        <rect key="frame" x="30" y="72.5" width="65.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.24572628739999999" green="0.50205779080000001" blue="0.79611158370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redk" translatesAutoresizingMaskIntoConstraints="NO" id="S0c-pf-C80">
+                        <rect key="frame" x="97.5" y="75" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="9TS-yY-Gie"/>
+                            <constraint firstAttribute="width" constant="15" id="Ggo-en-JhG"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gJQ-rh-mlt" firstAttribute="leading" secondItem="wLe-BP-61u" secondAttribute="trailing" constant="5" id="2cp-eS-Jyh"/>
+                    <constraint firstItem="wLe-BP-61u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5zs-wQ-e6i"/>
+                    <constraint firstItem="0wJ-sb-ws0" firstAttribute="leading" secondItem="hPv-AD-9gX" secondAttribute="trailing" constant="12" id="8id-cC-3P6"/>
+                    <constraint firstItem="gJQ-rh-mlt" firstAttribute="centerY" secondItem="wLe-BP-61u" secondAttribute="centerY" id="9VR-zz-PBS"/>
+                    <constraint firstItem="S0c-pf-C80" firstAttribute="centerY" secondItem="IGW-CM-Vtt" secondAttribute="centerY" id="IgI-rP-hpn"/>
+                    <constraint firstItem="S0c-pf-C80" firstAttribute="leading" secondItem="IGW-CM-Vtt" secondAttribute="trailing" constant="2" id="POL-oE-0Lr"/>
+                    <constraint firstItem="wLe-BP-61u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Rzy-Ip-ldU"/>
+                    <constraint firstItem="hPv-AD-9gX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="aSR-4c-HXp"/>
+                    <constraint firstItem="IGW-CM-Vtt" firstAttribute="leading" secondItem="0wJ-sb-ws0" secondAttribute="leading" id="c0s-TQ-8hS"/>
+                    <constraint firstItem="0wJ-sb-ws0" firstAttribute="top" secondItem="gJQ-rh-mlt" secondAttribute="bottom" constant="22.5" id="iFr-aX-3fd"/>
+                    <constraint firstItem="IGW-CM-Vtt" firstAttribute="top" secondItem="0wJ-sb-ws0" secondAttribute="bottom" constant="15" id="lgO-xw-Uor"/>
+                    <constraint firstAttribute="bottom" secondItem="hPv-AD-9gX" secondAttribute="bottom" id="mhV-k8-qAz"/>
+                    <constraint firstItem="hPv-AD-9gX" firstAttribute="centerX" secondItem="wLe-BP-61u" secondAttribute="centerX" id="nox-Ie-bvl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="kqTimeLab" destination="gJQ-rh-mlt" id="r0H-kX-Enk"/>
+                <outlet property="reSaveRecordArrow" destination="S0c-pf-C80" id="oiy-db-jCV"/>
+                <outlet property="reSaveRecordCtrl" destination="IGW-CM-Vtt" id="WT6-rg-vnM"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dots_blue" width="15" height="15"/>
+        <image name="redk" width="15" height="15"/>
+    </resources>
+</document>
